@@ -17,8 +17,7 @@ if (!isset($_SESSION["user_id"])) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>RecruteurAI - Dashboard</title>
-
+<title>Quiz Développeur - Tableau de bord</title>
 <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
@@ -30,7 +29,7 @@ if (!isset($_SESSION["user_id"])) {
 <nav class="flex justify-between items-center p-6 border-b border-cyan-800">
 
 <h1 class="text-3xl font-bold text-cyan-400">
-🤖 RecruteurAI
+💻 Quiz Développeur
 </h1>
 
 <a

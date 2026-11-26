@@ -1,4 +1,4 @@
-🤖 RecruteurAI
+💻 Quiz Développeur
 Plateforme de quiz techniques pour développeurs.
 
 

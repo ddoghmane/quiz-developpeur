@@ -26,7 +26,7 @@ ORDER BY best_score DESC
 <body class="bg-black text-white p-10">
 
 <h1 class="text-5xl text-yellow-400 mb-10">
-🏆 Classement RecruteurAI
+🏆 Classement Quiz Développeur
 </h1>
 
 <table class="w-full bg-gray-900 rounded-xl overflow-hidden">

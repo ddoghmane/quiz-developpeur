@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RecruteurAI</title>
-
+    <title>Quiz Développeur</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -18,7 +17,7 @@
         <nav class="flex justify-between items-center p-6">
 
             <h1 class="text-3xl font-bold text-cyan-400">
-                🤖 RecruteurAI
+💻 Quiz Développeur
             </h1>
 
             <div class="space-x-4">
@@ -50,10 +49,7 @@
             </h2>
 
             <p class="text-gray-300 text-xl max-w-3xl mb-10">
-                RecruteurAI est une plateforme d'entraînement pour développeurs.
-                Teste tes connaissances en HTML, CSS, JavaScript,
-                PHP, SQL, Git et algorithmes grâce à des quiz
-                inspirés de véritables entretiens techniques.
+Quiz Développeur est une plateforme d'entraînement pour développeurs et étudiants en informatique.
             </p>
 
             <div class="flex gap-5">
