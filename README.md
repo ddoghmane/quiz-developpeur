@@ -2,59 +2,54 @@
 
 Application web PHP/MySQL permettant aux développeurs et étudiants en informatique de tester leurs connaissances grâce à des quiz interactifs.
 
-Le projet comprend l'inscription des utilisateurs, la connexion sécurisée, le passage de quiz, l'affichage des résultats et le suivi des performances.
+Les utilisateurs peuvent créer un compte, se connecter, répondre à des quiz, consulter leurs résultats et suivre leur progression.
 
 ---
 
 ## ✨ Fonctionnalités
 
-✅ Inscription utilisateur
-
-✅ Connexion sécurisée
-
-✅ Quiz interactifs
-
-✅ Questions à choix multiples
-
-✅ Calcul automatique du score
-
-✅ Explication des réponses
-
-✅ Historique des résultats
-
-✅ Base de données MySQL
+- ✅ Inscription utilisateur
+- ✅ Connexion sécurisée
+- ✅ Sessions PHP
+- ✅ Quiz interactifs
+- ✅ Questions à choix multiples
+- ✅ Calcul automatique du score
+- ✅ Explications après chaque réponse
+- ✅ Historique des résultats
+- ✅ Classement des utilisateurs
+- ✅ Base de données MySQL
 
 ---
 
 ## 📸 Captures d'écran
 
-### Accueil
+### 🏠 Accueil
 
-screenshots/home-quiz.png
+![Accueil](screenshots/home-quiz.png)
 
-### Connexion
+### 🔐 Connexion
 
-screenshots/login.png
+![Connexion](screenshots/login.png)
 
-### Inscription
+### 📝 Inscription
 
-screenshots/register.png
+![Inscription](screenshots/register.png)
 
-### Quiz
+### 🎯 Quiz
 
-screenshots/quiz.png
+![Quiz](screenshots/quiz.png)
 
-### Question
+### ❓ Question
 
-screenshots/question.png
+![Question](screenshots/question.png)
 
-### Résultat
+### 🏆 Résultat
 
-screenshots/result.png
+![Résultat](screenshots/result.png)
 
-### Explication
+### 📖 Explication
 
-screenshots/explanation.png
+![Explication](screenshots/explanation.png)
 
 ---
 
@@ -62,17 +57,23 @@ screenshots/explanation.png
 
 ### Frontend
 
-- HTML
-- CSS
+- HTML5
+- CSS3
 - JavaScript
 
 ### Backend
 
-- PHP
+- PHP 8
 
 ### Base de données
 
 - MySQL
+
+### Outils
+
+- Git
+- GitHub
+- VS Code
 
 ---
 
@@ -85,7 +86,7 @@ Navigateur
 Application PHP
      │
      ▼
-MySQL
+Base de données MySQL
 ```
 
 ---
@@ -93,12 +94,15 @@ MySQL
 ## 📂 Structure du projet
 
 ```text
-quiz-developpeur
+recruteur-ai/
 │
 ├── assets/
 ├── css/
 ├── js/
 ├── includes/
+├── database/
+│   └── recruteur_ai.sql
+│
 ├── screenshots/
 │   ├── home-quiz.png
 │   ├── login.png
@@ -108,9 +112,6 @@ quiz-developpeur
 │   ├── result.png
 │   └── explanation.png
 │
-├── database/
-│   └── recruteur_ai.sql
-│
 ├── index.php
 ├── login.php
 ├── register.php
@@ -119,38 +120,45 @@ quiz-developpeur
 ├── result.php
 ├── leaderboard.php
 ├── history.php
-└── logout.php
+├── logout.php
+└── README.md
 ```
 
 ---
 
 ## 🚀 Installation
 
-### Cloner le projet
+### 1. Cloner le projet
 
 ```bash
-git clone https://github.com/ddoghmane/quiz-developpeur.git
+git clone https://github.com/ddoghmane/recruteur-ai.git
 ```
 
-### Créer la base de données
+### 2. Entrer dans le dossier
+
+```bash
+cd recruteur-ai
+```
+
+### 3. Créer la base de données
 
 ```sql
 CREATE DATABASE recruteur_ai;
 ```
 
-### Importer la base
+### 4. Importer la base
 
 ```bash
 mysql -u root -p recruteur_ai < database/recruteur_ai.sql
 ```
 
-### Lancer le serveur PHP
+### 5. Lancer le serveur PHP
 
 ```bash
 php -S localhost:8000
 ```
 
-Puis ouvrir :
+### 6. Ouvrir dans le navigateur
 
 ```text
 http://localhost:8000
@@ -158,45 +166,51 @@ http://localhost:8000
 
 ---
 
-## 🗄️ Gestion de la base de données
+## 🗄 Base de données
 
-### Exporter
-
-```bash
-sudo mysqldump recruteur_ai > database/recruteur_ai.sql
-```
-
-### Importer
+### Export
 
 ```bash
-mysql -u root -p recruteur_ai < database/recruteur_ai.sql
+mysqldump -u root -p recruteur_ai > database/recruteur_ai.sql
 ```
+
+### Import
+
+```bash
+mysql -u root -p recruteur_ai < database/recruteurAuthentification utilisateur
+- Conception de base de données
+- SQL et MySQL
+- Architecture web
+- Manipulation de formulaires
+- Gestion des scores
+- Interface utilisateur
+- Git et GitHub
 
 ---
 
-## 🎯 Compétences mises en œuvre
+## 📈 Évolutions possibles
 
-- PHP
-- MySQL
-- SQL
-- Authentification utilisateur
-- Sessions PHP
-- Gestion des scores
-- Développement Web
-- Git et GitHub
+- Ajout de nouvelles catégories de quiz
+- Tableau de bord administrateur
+- Système de badges
+- Classement avancé
+- API REST
+- Application mobile Flutter
+- Authentification OAuth (Google/GitHub)
 
 ---
 
 ## 👨‍💻 Auteur
 
-Daoud Doghmane
+**Daoud Doghmane**
 
-GitHub :
-
+GitHub :  
 https://github.com/ddoghmane
 
 ---
 
 ## 📜 Licence
 
-Projet personnel et éducatif.
+Projet personnel réalisé dans le cadre de l'apprentissage du développement web avec PHP et MySQL.
+
+Libre d'utilisation à des fins éducatives.
